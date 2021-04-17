@@ -11,33 +11,46 @@ html {
 
 .banner {
   display: flex;
-  /* background-image: url(/media/Fundoteste.png); */
+  background-image: url(/media/Fundo.jpg);
   background-repeat: no-repeat;
-  height: 85vh;
-  width: 100%;
-  flex-direction: row;
+  background-size: 100%;
+  padding-top: 5rem;
+  height: 90vh;
   border-style: dashed;
   border-width: 2px;
-  border-color: hotpink;
+  border-color: rgb(255, 183, 219);
+  flex-direction: column;
+}
 
-  /* border: 1px; */
+.imageminicio {
+  justify-content: center;
+  width: 200px;
+  height: 250px;
+  border-radius: 80px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding-top: 10px;
+  flex-wrap: wrap;
 }
 
 .img-banner {
   display: flex;
   flex: 1;
-  flex-direction: row;
-  align-content: center;
-  /* padding-top: 10px; */
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.imageminicio {
+.h1 {
+  width: 200px;
+  height: 250px;
+
+  flex-direction: column;
+}
+
+.Texto-banner {
   display: flex;
-  width: 10rem;
-  height: 280px;
-  border-radius: 50px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  padding-top: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 200px;
+  line-height: 250px;
 }
