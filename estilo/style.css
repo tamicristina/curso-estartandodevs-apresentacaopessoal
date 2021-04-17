@@ -12,14 +12,15 @@ html {
 .banner {
   display: flex;
   background-image: url(/media/Background.jpg);
-  height: 55vh;
+  height: 85vh;
   width: 100%;
 }
 
 .img-banner {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 33%;
+  /* width: 100%; */
   flex-direction: row;
   align-content: center;
   padding-top: 10px;
@@ -32,4 +33,18 @@ html {
   border-radius: 50px;
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+.img-banner {
+  display: flex;
+  width: 33%;
+  justify-content: space-evenly;
+}
+.imagemheart {
+  width: 150px;
+  height: 150px;
+}
+
+.vazia {
+  width: 33%;
 }
