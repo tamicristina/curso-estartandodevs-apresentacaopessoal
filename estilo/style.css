@@ -11,19 +11,25 @@ html {
 
 .banner {
   display: flex;
-  background-image: url(/media/Background.jpg);
+  /* background-image: url(/media/Fundoteste.png); */
+  background-repeat: no-repeat;
   height: 85vh;
   width: 100%;
+  flex-direction: row;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: hotpink;
+
+  /* border: 1px; */
 }
 
 .img-banner {
   display: flex;
-  justify-content: center;
-  width: 33%;
-  /* width: 100%; */
+  flex: 1;
   flex-direction: row;
   align-content: center;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  justify-content: space-evenly;
 }
 
 .imageminicio {
@@ -33,18 +39,5 @@ html {
   border-radius: 50px;
   aspect-ratio: 1;
   object-fit: cover;
-}
-
-.img-banner {
-  display: flex;
-  width: 33%;
-  justify-content: space-evenly;
-}
-.imagemheart {
-  width: 150px;
-  height: 150px;
-}
-
-.vazia {
-  width: 33%;
+  padding-top: 10px;
 }
