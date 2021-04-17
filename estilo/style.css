@@ -1,0 +1,17 @@
+/* margin e padding 0 para não ficar com margens nas laterais */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* body e html ocupando 100% da tela */
+body,
+html {
+  height: 100%;
+}
+
+.banner {
+  display: flex;
+  background-image: url(/media/Background.jpg);
+  height: 50vh;
+  width: 100%;
+}
