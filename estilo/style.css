@@ -12,6 +12,24 @@ html {
 .banner {
   display: flex;
   background-image: url(/media/Background.jpg);
-  height: 50vh;
+  height: 55vh;
   width: 100%;
+}
+
+.img-banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  align-content: center;
+  padding-top: 10px;
+}
+
+.imageminicio {
+  display: flex;
+  width: 10rem;
+  height: 280px;
+  border-radius: 50px;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
