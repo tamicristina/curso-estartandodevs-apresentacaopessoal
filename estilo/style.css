@@ -11,6 +11,9 @@ html {
   height: 100%;
 }
 
+/* Criei uma div com um background pronto, min height de 100vh, pois irei criar outras cessões 
+na mesma página com um botão inicial, border style para fazer o pontilhado na div, flex direction em colunas para
+poder centralizar a imagem com os textos */
 .banner {
   display: flex;
   background-image: url(/media/Fundo.jpg);
@@ -23,17 +26,18 @@ html {
   flex-direction: column;
 }
 
+/* Imagem pessoal, border radius para deixar a imagem com as bordas arredondadas, object fit para que a imagem preencha toda a caixa
+mantendo a proporção */
 .imageminicio {
   display: flex;
   justify-content: center;
   width: 200px;
   height: 250px;
   border-radius: 80px;
-  aspect-ratio: 1;
   object-fit: cover;
-  flex-wrap: wrap;
 }
-
+/* Div contendo a imagem pessoal, utilizei flex 1 para ocupar 1/3 da tela, utilizei o align items para 
+que a imagem fique mais próxima do Texto*/
 .img-banner {
   display: flex;
   flex: 1;
@@ -41,6 +45,7 @@ html {
   align-items: flex-end;
 }
 
+/* Div que contém os dois textos do banner*/
 .container {
   flex: 1;
   display: flex;
@@ -51,6 +56,7 @@ html {
   color: rgb(255, 183, 219);
 }
 
+/* Chamei a class da frase separado, pois queria ajustá-la com tamanhos e estilo diferentes */
 .banner-frase {
   flex: 1;
   display: flex;
@@ -62,12 +68,14 @@ html {
   align-content: flex-end;
 }
 
+/* Div do botão */
 .btn {
   display: flex;
   flex: 1;
   justify-content: center;
 }
-
+/* a do botão; height de 20px para que o pontilhado fiquei ajustado ao tamanho do texto, border-style dotted para
+que a borda do botão fique pontilhada */
 .btn-rosa {
   text-decoration: none;
   font-size: 20px;
