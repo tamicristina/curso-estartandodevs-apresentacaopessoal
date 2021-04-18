@@ -145,11 +145,12 @@ que a borda do botão fique pontilhada */
   flex-direction: column;
   align-items: center;
 }
-/* Listagem de habilidades */
+/* li com a Listagem de habilidades */
 .habilidades_lista {
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  padding-left: 10px;
 }
 /* Div que engloba todas as divs das redes sociais */
 .redes-container {
@@ -180,4 +181,14 @@ que a borda do botão fique pontilhada */
   color: white;
   text-decoration: none;
   text-align: center;
+}
+
+@media (max-with: 479px) {
+}
+
+.habilidades_lista {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  padding-left: 20px;
 }
