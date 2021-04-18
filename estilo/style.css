@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
-
 @import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
 
 /* margin e padding 0 para não ficar com margens nas laterais */
@@ -91,6 +90,7 @@ que a borda do botão fique pontilhada */
   text-transform: uppercase;
 }
 
+/* titílo da página de apresentação */
 .titulo-section {
   display: flex;
   justify-content: center;
@@ -101,13 +101,13 @@ que a borda do botão fique pontilhada */
   color: rgb(255, 183, 219);
   font-family: Abel;
 }
-
+/*div da imagem da página de apresentação */
 .imagem-container {
   display: flex;
   justify-content: center;
   padding-top: 15px;
 }
-
+/* imagem da página de apresentação */
 .img-container {
   display: flex;
   width: 280px;
@@ -116,15 +116,14 @@ que a borda do botão fique pontilhada */
   border-width: 3px;
   border-color: rgb(255, 183, 219);
 }
-
+/* Container com a descrição pessoal e habilidades */
 .sobre-container-geral {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
   font-family: Abel;
   padding-top: 30px;
 }
-
+/* Container com a descrição pessoal */
 .sobre-container {
   display: flex;
   flex-direction: column;
@@ -133,7 +132,9 @@ que a borda do botão fique pontilhada */
   font-size: 18px;
 }
 
+/* Título: minhas habilidades */
 .habilidades_titulo {
+  display: flex;
   font-size: 20px;
   height: 25px;
 }
@@ -146,7 +147,8 @@ que a borda do botão fique pontilhada */
 }
 /* Listagem de habilidades */
 .habilidades_lista {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
 }
 /* Div que engloba todas as divs das redes sociais */
