@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 
+@import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
+
 /* margin e padding 0 para não ficar com margens nas laterais */
 * {
   margin: 0px;
@@ -66,6 +68,7 @@ que a imagem fique mais próxima do Texto*/
   font-style: italic;
   color: rgb(255, 183, 219);
   align-content: flex-end;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Div do botão */
@@ -86,4 +89,17 @@ que a borda do botão fique pontilhada */
   font-weight: bold;
   height: 20px;
   text-transform: uppercase;
+}
+
+.titulo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#container-section {
+  font-family: Abel;
 }
