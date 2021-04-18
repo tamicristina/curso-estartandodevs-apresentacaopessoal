@@ -54,7 +54,7 @@ que a imagem fique mais próxima do Texto*/
   justify-content: center;
   align-items: center;
   font-family: Pacifico;
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(255, 183, 219);
 }
 
@@ -64,7 +64,7 @@ que a imagem fique mais próxima do Texto*/
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-size: 35px;
+  font-size: 25px;
   font-style: italic;
   color: rgb(255, 183, 219);
   align-content: flex-end;
@@ -98,8 +98,54 @@ que a borda do botão fique pontilhada */
   padding-top: 30px;
   font-weight: bold;
   font-size: 20px;
+  color: rgb(255, 183, 219);
+  font-family: Abel;
 }
 
-#container-section {
+.imagem-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.img-container {
+  display: flex;
+  width: 280px;
+  border-radius: 10px;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: rgb(255, 183, 219);
+}
+
+.sobre-container-geral {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
   font-family: Abel;
+  padding-top: 30px;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  font-size: 18px;
+}
+
+.habilidades_titulo {
+  font-size: 20px;
+  height: 25px;
+}
+
+.habilidades_container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidades_lista {
+  flex-direction: row;
+  font-size: 18px;
 }
