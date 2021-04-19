@@ -219,6 +219,10 @@ que a borda do botão fique pontilhada */
     padding: 10px 15px;
   }
 
+  .titulo-section {
+    font-size: 15px;
+  }
+
   .img-container {
     display: flex;
     width: 300px;
