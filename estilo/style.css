@@ -101,7 +101,21 @@ que a borda do botão fique pontilhada */
   color: rgb(255, 183, 219);
   font-family: Abel;
 }
-
+/*div da imagem da página de apresentação */
+.imagem-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+/* imagem da página de apresentação */
+.img-container {
+  display: flex;
+  width: 350px;
+  border-radius: 10px;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: rgb(255, 183, 219);
+}
 /* Container com a descrição pessoal e habilidades */
 .sobre-container-geral {
   display: flex;
@@ -167,6 +181,12 @@ que a borda do botão fique pontilhada */
   color: white;
   text-decoration: none;
   text-align: center;
+}
+
+.texto-projeto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media (max-with: 479px) {
