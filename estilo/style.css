@@ -17,7 +17,7 @@ na mesma página com um botão inicial, border style para fazer o pontilhado na 
 poder centralizar a imagem com os textos */
 .banner {
   display: flex;
-  background-image: url(/media/Fundo.jpg);
+  background-image: url(../media/Fundo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 100vh;
@@ -129,7 +129,7 @@ que a borda do botão fique pontilhada */
   flex-direction: column;
   align-items: center;
   width: 50%;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 /* Título: minhas habilidades */
@@ -149,7 +149,7 @@ que a borda do botão fique pontilhada */
 .habilidades_lista {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 19px;
   padding-left: 10px;
 }
 /* Div que engloba todas as divs das redes sociais */
@@ -182,19 +182,69 @@ que a borda do botão fique pontilhada */
   text-decoration: none;
   text-align: center;
 }
-
+/* Texto com o link do projeto */
 .texto-projeto {
+  margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-@media (max-with: 479px) {
-}
-
-.habilidades_lista {
-  display: flex;
-  flex-direction: column;
+  font-family: Abel;
+  text-decoration: none;
   font-size: 18px;
-  padding-left: 20px;
+  font-weight: bold;
+}
+
+.link-projeto {
+  /* text-decoration: none; */
+  color: rgb(255, 183, 219);
+}
+
+@media (max-width: 479px) {
+  .imageminicio {
+    width: 180px;
+    height: 230px;
+  }
+
+  .container {
+    font-size: 18px;
+  }
+  .banner-frase {
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-rosa {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .img-container {
+    display: flex;
+    width: 300px;
+  }
+
+  .sobre-container {
+    display: flex;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
+  .habilidades_lista {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .redes-sociais {
+    display: flex;
+    width: 50px;
+    height: 80px;
+  }
+
+  .redes-img {
+    display: flex;
+    width: 50px;
+  }
 }
