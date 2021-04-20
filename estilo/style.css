@@ -15,9 +15,7 @@ html {
 /* Criei uma div com um background pronto, min height de 100vh, pois irei criar outras cessões 
 na mesma página com um botão inicial, border style para fazer o pontilhado na div, flex direction em colunas para
 poder centralizar a imagem com os textos */
-.body {
-  background-color: white;
-}
+
 .banner {
   display: flex;
   background-image: url(../media/Fundo.jpg);
