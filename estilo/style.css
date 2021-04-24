@@ -253,3 +253,11 @@ que a borda do botão fique pontilhada */
     width: 50px;
   }
 }
+
+@media (min-width: 768px) {
+  .banner-frase {
+    display: flex;
+    text-align: center;
+    margin: 4px;
+  }
+}
