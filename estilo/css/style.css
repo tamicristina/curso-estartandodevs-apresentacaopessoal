@@ -99,14 +99,15 @@ que a borda do botão fique pontilhada */
 
 /* titílo da página de apresentação */
 .titulo-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 30px;
   font-weight: bold;
   font-size: 20px;
   color: #ffb7db;
   font-family: Abel;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /*div da imagem da página de apresentação */
@@ -136,11 +137,12 @@ que a borda do botão fique pontilhada */
 
 /* Container com a descrição pessoal */
 .sobre-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
   font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Título: minhas habilidades */
@@ -175,14 +177,15 @@ que a borda do botão fique pontilhada */
 
 /* Div que engloba as duas divs do linkedin e github */
 .redes-sociais {
-  display: flex;
   background-color: #ffb7db;
-  flex-direction: column;
   border-radius: 10px;
-  align-items: center;
   font-family: Abel;
   padding: 20px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Imagens linkedin e git */
@@ -201,13 +204,14 @@ que a borda do botão fique pontilhada */
 /* Texto com o link do projeto */
 .texto-projeto {
   margin: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   font-family: Abel;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-projeto {
@@ -215,6 +219,11 @@ que a borda do botão fique pontilhada */
   color: #ffb7db;
 }
 
+@media (max-width: 1280px) {
+  .banner-frase {
+    text-align: center;
+  }
+}
 @media (max-width: 479px) {
   .imageminicio {
     width: 180px;
@@ -226,7 +235,6 @@ que a borda do botão fique pontilhada */
   }
 
   .banner-frase {
-    display: flex;
     font-size: 18px;
     text-align: center;
   }
@@ -269,32 +277,28 @@ que a borda do botão fique pontilhada */
     width: 50px;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .banner-frase {
     text-align: center;
     margin: 4px;
   }
 
   .habilidades_lista {
-    display: flex;
     font-size: 16px;
     padding-left: 20px;
   }
 
   .sobre-container {
-    display: flex;
     font-size: 16px;
     padding-left: 5px;
   }
 
   .redes-sociais {
-    display: flex;
     width: 50px;
     height: 80px;
   }
 
   .redes-img {
-    display: flex;
     width: 50px;
   }
 }

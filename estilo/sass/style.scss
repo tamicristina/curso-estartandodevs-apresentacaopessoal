@@ -99,14 +99,12 @@ que a borda do botão fique pontilhada */
 
 /* titílo da página de apresentação */
 .titulo-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 30px;
   font-weight: bold;
   font-size: 20px;
   color: $rosa;
   font-family: Abel;
+  @include flexbox(row, center, center);
 }
 /*div da imagem da página de apresentação */
 .imagem-container {
@@ -132,11 +130,9 @@ que a borda do botão fique pontilhada */
 }
 /* Container com a descrição pessoal */
 .sobre-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
   font-size: 19px;
+  @include flexbox(column);
 }
 
 /* Título: minhas habilidades */
@@ -168,14 +164,12 @@ que a borda do botão fique pontilhada */
 
 /* Div que engloba as duas divs do linkedin e github */
 .redes-sociais {
-  display: flex;
   background-color: $rosa;
-  flex-direction: column;
   border-radius: 10px;
-  align-items: center;
   font-family: Abel;
   padding: 20px;
   margin: 20px;
+  @include flexbox(column, center, center);
 }
 /* Imagens linkedin e git */
 .redes-img {
@@ -192,18 +186,22 @@ que a borda do botão fique pontilhada */
 /* Texto com o link do projeto */
 .texto-projeto {
   margin: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   font-family: Abel;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  @include flexbox(row, center);
 }
 
 .link-projeto {
   /* text-decoration: none; */
   color: $rosa;
+}
+
+@media (max-width: 1280px) {
+  .banner-frase {
+    text-align: center;
+  }
 }
 
 @media (max-width: 479px) {
@@ -216,7 +214,6 @@ que a borda do botão fique pontilhada */
     font-size: 18px;
   }
   .banner-frase {
-    display: flex;
     font-size: 18px;
     text-align: center;
   }
@@ -260,31 +257,27 @@ que a borda do botão fique pontilhada */
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .banner-frase {
     text-align: center;
     margin: 4px;
   }
 
   .habilidades_lista {
-    display: flex;
     font-size: 16px;
     padding-left: 20px;
   }
   .sobre-container {
-    display: flex;
     font-size: 16px;
     padding-left: 5px;
   }
 
   .redes-sociais {
-    display: flex;
     width: 50px;
     height: 80px;
   }
 
   .redes-img {
-    display: flex;
     width: 50px;
   }
 }
