@@ -1,11 +1,12 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
-
 /* margin e padding 0 para não ficar com margens nas laterais */
 * {
   margin: 0px;
   padding: 0px;
 }
+
 /* body e html ocupando 100% da tela */
 body,
 html {
@@ -15,7 +16,6 @@ html {
 /* Criei uma div com um background pronto, min height de 100vh, pois irei criar outras cessões 
 na mesma página com um botão inicial, border style para fazer o pontilhado na div, flex direction em colunas para
 poder centralizar a imagem com os textos */
-
 .banner {
   display: flex;
   background-image: url(../media/Fundo.jpg);
@@ -24,7 +24,7 @@ poder centralizar a imagem com os textos */
   min-height: 100vh;
   border-style: dashed;
   border-width: 2px;
-  border-color: rgb(255, 183, 219);
+  border-color: #ffb7db;
   flex-direction: column;
 }
 
@@ -38,6 +38,7 @@ mantendo a proporção */
   border-radius: 80px;
   object-fit: cover;
 }
+
 /* Div contendo a imagem pessoal, utilizei flex 1 para ocupar 1/3 da tela, utilizei o align items para 
 que a imagem fique mais próxima do Texto*/
 .img-banner {
@@ -55,7 +56,7 @@ que a imagem fique mais próxima do Texto*/
   align-items: center;
   font-family: Pacifico;
   font-size: 20px;
-  color: rgb(255, 183, 219);
+  color: #ffb7db;
 }
 
 /* Chamei a class da frase separado, pois queria ajustá-la com tamanhos e estilo diferentes */
@@ -66,7 +67,7 @@ que a imagem fique mais próxima do Texto*/
   justify-content: center;
   font-size: 25px;
   font-style: italic;
-  color: rgb(255, 183, 219);
+  color: #ffb7db;
   align-content: flex-end;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -77,6 +78,7 @@ que a imagem fique mais próxima do Texto*/
   flex: 1;
   justify-content: center;
 }
+
 /* a do botão; height de 20px para que o pontilhado fiquei ajustado ao tamanho do texto, border-style dotted para
 que a borda do botão fique pontilhada */
 .btn-rosa {
@@ -85,7 +87,7 @@ que a borda do botão fique pontilhada */
   border-style: dotted;
   border-radius: 30px;
   padding: 15px 20px;
-  color: rgb(255, 183, 219);
+  color: #ffb7db;
   font-weight: bold;
   height: 20px;
   text-transform: uppercase;
@@ -99,15 +101,17 @@ que a borda do botão fique pontilhada */
   padding-top: 30px;
   font-weight: bold;
   font-size: 20px;
-  color: rgb(255, 183, 219);
+  color: #ffb7db;
   font-family: Abel;
 }
+
 /*div da imagem da página de apresentação */
 .imagem-container {
   display: flex;
   justify-content: center;
   padding-top: 15px;
 }
+
 /* imagem da página de apresentação */
 .img-container {
   display: flex;
@@ -115,8 +119,9 @@ que a borda do botão fique pontilhada */
   border-radius: 10px;
   border-style: dashed;
   border-width: 3px;
-  border-color: rgb(255, 183, 219);
+  border-color: #ffb7db;
 }
+
 /* Container com a descrição pessoal e habilidades */
 .sobre-container-geral {
   display: flex;
@@ -124,6 +129,7 @@ que a borda do botão fique pontilhada */
   font-family: Abel;
   padding-top: 30px;
 }
+
 /* Container com a descrição pessoal */
 .sobre-container {
   display: flex;
@@ -139,6 +145,7 @@ que a borda do botão fique pontilhada */
   font-size: 20px;
   height: 25px;
 }
+
 /* Div com a listagem de habilidades */
 .habilidades_container {
   display: flex;
@@ -146,6 +153,7 @@ que a borda do botão fique pontilhada */
   flex-direction: column;
   align-items: center;
 }
+
 /* li com a Listagem de habilidades */
 .habilidades_lista {
   display: flex;
@@ -153,6 +161,7 @@ que a borda do botão fique pontilhada */
   font-size: 19px;
   padding-left: 10px;
 }
+
 /* Div que engloba todas as divs das redes sociais */
 .redes-container {
   display: flex;
@@ -163,7 +172,7 @@ que a borda do botão fique pontilhada */
 /* Div que engloba as duas divs do linkedin e github */
 .redes-sociais {
   display: flex;
-  background-color: rgb(255, 183, 219);
+  background-color: #ffb7db;
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
@@ -171,6 +180,7 @@ que a borda do botão fique pontilhada */
   padding: 20px;
   margin: 20px;
 }
+
 /* Imagens linkedin e git */
 .redes-img {
   display: flex;
@@ -183,6 +193,7 @@ que a borda do botão fique pontilhada */
   text-decoration: none;
   text-align: center;
 }
+
 /* Texto com o link do projeto */
 .texto-projeto {
   margin: 20px;
@@ -197,7 +208,7 @@ que a borda do botão fique pontilhada */
 
 .link-projeto {
   /* text-decoration: none; */
-  color: rgb(255, 183, 219);
+  color: #ffb7db;
 }
 
 @media (max-width: 479px) {
@@ -209,6 +220,7 @@ que a borda do botão fique pontilhada */
   .container {
     font-size: 18px;
   }
+
   .banner-frase {
     display: flex;
     font-size: 18px;
@@ -253,11 +265,35 @@ que a borda do botão fique pontilhada */
     width: 50px;
   }
 }
-
 @media (min-width: 768px) {
   .banner-frase {
     display: flex;
     text-align: center;
     margin: 4px;
   }
+
+  .habilidades_lista {
+    display: flex;
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .sobre-container {
+    display: flex;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
+  .redes-sociais {
+    display: flex;
+    width: 50px;
+    height: 80px;
+  }
+
+  .redes-img {
+    display: flex;
+    width: 50px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
