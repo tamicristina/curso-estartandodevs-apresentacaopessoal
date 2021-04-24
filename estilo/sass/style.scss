@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
 
+//Variável de cores//
+$rosa: rgb(255, 183, 219);
+$branco: white;
+
 /* margin e padding 0 para não ficar com margens nas laterais */
 * {
   margin: 0px;
@@ -24,7 +28,7 @@ poder centralizar a imagem com os textos */
   min-height: 100vh;
   border-style: dashed;
   border-width: 2px;
-  border-color: rgb(255, 183, 219);
+  border-color: $rosa;
   flex-direction: column;
 }
 
@@ -55,7 +59,7 @@ que a imagem fique mais próxima do Texto*/
   align-items: center;
   font-family: Pacifico;
   font-size: 20px;
-  color: rgb(255, 183, 219);
+  color: $rosa;
 }
 
 /* Chamei a class da frase separado, pois queria ajustá-la com tamanhos e estilo diferentes */
@@ -66,7 +70,7 @@ que a imagem fique mais próxima do Texto*/
   justify-content: center;
   font-size: 25px;
   font-style: italic;
-  color: rgb(255, 183, 219);
+  color: $rosa;
   align-content: flex-end;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -85,7 +89,7 @@ que a borda do botão fique pontilhada */
   border-style: dotted;
   border-radius: 30px;
   padding: 15px 20px;
-  color: rgb(255, 183, 219);
+  color: $rosa;
   font-weight: bold;
   height: 20px;
   text-transform: uppercase;
@@ -99,7 +103,7 @@ que a borda do botão fique pontilhada */
   padding-top: 30px;
   font-weight: bold;
   font-size: 20px;
-  color: rgb(255, 183, 219);
+  color: $rosa;
   font-family: Abel;
 }
 /*div da imagem da página de apresentação */
@@ -115,7 +119,7 @@ que a borda do botão fique pontilhada */
   border-radius: 10px;
   border-style: dashed;
   border-width: 3px;
-  border-color: rgb(255, 183, 219);
+  border-color: $rosa;
 }
 /* Container com a descrição pessoal e habilidades */
 .sobre-container-geral {
@@ -163,7 +167,7 @@ que a borda do botão fique pontilhada */
 /* Div que engloba as duas divs do linkedin e github */
 .redes-sociais {
   display: flex;
-  background-color: rgb(255, 183, 219);
+  background-color: $rosa;
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
@@ -179,7 +183,7 @@ que a borda do botão fique pontilhada */
 /* <a> que engloba o link, texto e imagem */
 .redes-link {
   padding-top: 5px;
-  color: white;
+  color: $branco;
   text-decoration: none;
   text-align: center;
 }
@@ -197,7 +201,7 @@ que a borda do botão fique pontilhada */
 
 .link-projeto {
   /* text-decoration: none; */
-  color: rgb(255, 183, 219);
+  color: $rosa;
 }
 
 @media (max-width: 479px) {
