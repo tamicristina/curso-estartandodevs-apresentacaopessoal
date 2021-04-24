@@ -2,8 +2,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
 
 //Variável de cores//
-$rosa: rgb(255, 183, 219);
-$branco: white;
+@import "./variables.scss";
+
+//MIXINS//
+@mixin flexbox($direction: column, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: $align;
+}
 
 /* margin e padding 0 para não ficar com margens nas laterais */
 * {
