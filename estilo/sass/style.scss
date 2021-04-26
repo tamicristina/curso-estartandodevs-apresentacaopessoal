@@ -37,26 +37,29 @@ poder centralizar a imagem com os textos */
   border-width: 2px;
   border-color: $rosa;
   flex-direction: column;
+  
+  /* Imagem pessoal, border radius para deixar a imagem com as bordas arredondadas, object fit para que a imagem preencha toda a caixa
+  mantendo a proporção */
+  .imageminicio {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    border-radius: 80px;
+    object-fit: cover;
+    
+    /* Div contendo a imagem pessoal, utilizei flex 1 para ocupar 1/3 da tela, utilizei o align items para 
+    que a imagem fique mais próxima do Texto*/
+    .img-banner {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: flex-end;
+      
+    }
+  }
 }
 
-/* Imagem pessoal, border radius para deixar a imagem com as bordas arredondadas, object fit para que a imagem preencha toda a caixa
-mantendo a proporção */
-.imageminicio {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 250px;
-  border-radius: 80px;
-  object-fit: cover;
-}
-/* Div contendo a imagem pessoal, utilizei flex 1 para ocupar 1/3 da tela, utilizei o align items para 
-que a imagem fique mais próxima do Texto*/
-.img-banner {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: flex-end;
-}
 
 /* Div que contém os dois textos do banner*/
 .container {
@@ -82,19 +85,20 @@ que a imagem fique mais próxima do Texto*/
 .btn {
   flex: 1;
   @include flexbox(row, center, flex-start);
-}
-/* a do botão; height de 20px para que o pontilhado fiquei ajustado ao tamanho do texto, border-style dotted para
-que a borda do botão fique pontilhada */
-.btn-rosa {
-  text-decoration: none;
-  font-size: 20px;
-  border-style: dotted;
-  border-radius: 30px;
-  padding: 15px 20px;
-  color: $rosa;
-  font-weight: bold;
-  height: 20px;
-  text-transform: uppercase;
+  
+  /* a do botão; height de 20px para que o pontilhado fiquei ajustado ao tamanho do texto, border-style dotted para
+  que a borda do botão fique pontilhada */
+  .btn-rosa {
+    text-decoration: none;
+    font-size: 20px;
+    border-style: dotted;
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: $rosa;
+    font-weight: bold;
+    height: 20px;
+    text-transform: uppercase;
+  }
 }
 
 /* titílo da página de apresentação */
@@ -111,78 +115,82 @@ que a borda do botão fique pontilhada */
   display: flex;
   justify-content: center;
   padding-top: 15px;
+  /* imagem da página de apresentação */
+  .img-container {
+    display: flex;
+    width: 350px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: $rosa;
+  }
 }
-/* imagem da página de apresentação */
-.img-container {
-  display: flex;
-  width: 350px;
-  border-radius: 10px;
-  border-style: dashed;
-  border-width: 3px;
-  border-color: $rosa;
-}
+
 /* Container com a descrição pessoal e habilidades */
 .sobre-container-geral {
   display: flex;
   justify-content: space-around;
   font-family: Abel;
   padding-top: 30px;
-}
-/* Container com a descrição pessoal */
-.sobre-container {
-  width: 50%;
-  font-size: 19px;
-  @include flexbox(column);
+
+  /* Container com a descrição pessoal */
+  .sobre-container {
+    width: 50%;
+    font-size: 19px;
+    @include flexbox(column);
+  }
+    
+  /* Div com a listagem de habilidades */
+  .habilidades_container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    
+    /* Título: minhas habilidades */
+    .habilidades_titulo {
+      display: flex;
+      font-size: 20px;
+      height: 25px;
+    }
+    /* li com a Listagem de habilidades */
+    .habilidades_lista {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  }
 }
 
-/* Título: minhas habilidades */
-.habilidades_titulo {
-  display: flex;
-  font-size: 20px;
-  height: 25px;
-}
-/* Div com a listagem de habilidades */
-.habilidades_container {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  align-items: center;
-}
-/* li com a Listagem de habilidades */
-.habilidades_lista {
-  display: flex;
-  flex-direction: column;
-  font-size: 19px;
-  padding-left: 10px;
-}
 /* Div que engloba todas as divs das redes sociais */
 .redes-container {
   display: flex;
   padding-top: 10px;
   justify-content: center;
+  /* Div que engloba as duas divs do linkedin e github */
+  .redes-sociais {
+    background-color: $rosa;
+    border-radius: 10px;
+    font-family: Abel;
+    padding: 20px;
+    margin: 20px;
+    @include flexbox(column, center, center);
+    /* <a> que engloba o link, texto e imagem */
+    .redes-link {
+      padding-top: 5px;
+      color: $branco;
+      text-decoration: none;
+      text-align: center;
+      /* Imagens linkedin e git */
+      .redes-img {
+        display: flex;
+      }
+    }
+  }
 }
 
-/* Div que engloba as duas divs do linkedin e github */
-.redes-sociais {
-  background-color: $rosa;
-  border-radius: 10px;
-  font-family: Abel;
-  padding: 20px;
-  margin: 20px;
-  @include flexbox(column, center, center);
-}
-/* Imagens linkedin e git */
-.redes-img {
-  display: flex;
-}
 
-/* <a> que engloba o link, texto e imagem */
-.redes-link {
-  padding-top: 5px;
-  color: $branco;
-  text-decoration: none;
-  text-align: center;
-}
 /* Texto com o link do projeto */
 .texto-projeto {
   margin: 20px;
@@ -191,12 +199,12 @@ que a borda do botão fique pontilhada */
   font-size: 18px;
   font-weight: bold;
   @include flexbox(row, center);
+  
+  .link-projeto {
+    color: $rosa;
+  }
 }
 
-.link-projeto {
-  /* text-decoration: none; */
-  color: $rosa;
-}
 
 @media (max-width: 1280px) {
   .banner-frase {
@@ -249,11 +257,11 @@ que a borda do botão fique pontilhada */
     display: flex;
     width: 50px;
     height: 80px;
-  }
-
-  .redes-img {
-    display: flex;
-    width: 50px;
+    
+    .redes-img {
+      display: flex;
+      width: 50px;
+    }
   }
 }
 
@@ -266,6 +274,7 @@ que a borda do botão fique pontilhada */
   .habilidades_lista {
     font-size: 16px;
     padding-left: 20px;
+   
   }
   .sobre-container {
     font-size: 16px;
@@ -275,9 +284,9 @@ que a borda do botão fique pontilhada */
   .redes-sociais {
     width: 50px;
     height: 80px;
+    .redes-img {
+      width: 50px;
+    }
   }
 
-  .redes-img {
-    width: 50px;
-  }
 }
