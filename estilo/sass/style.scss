@@ -38,68 +38,68 @@ poder centralizar a imagem com os textos */
   border-color: $rosa;
   flex-direction: column;
   
-  /* Imagem pessoal, border radius para deixar a imagem com as bordas arredondadas, object fit para que a imagem preencha toda a caixa
-  mantendo a proporção */
-  .imageminicio {
+  /* Div contendo a imagem pessoal, utilizei flex 1 para ocupar 1/3 da tela, utilizei o align items para 
+  que a imagem fique mais próxima do Texto*/
+  .img-banner {
     display: flex;
+    flex: 1;
     justify-content: center;
-    width: 200px;
-    height: 250px;
-    border-radius: 80px;
-    object-fit: cover;
+    align-items: flex-end;
     
-    /* Div contendo a imagem pessoal, utilizei flex 1 para ocupar 1/3 da tela, utilizei o align items para 
-    que a imagem fique mais próxima do Texto*/
-    .img-banner {
+    /* Imagem pessoal, border radius para deixar a imagem com as bordas arredondadas, object fit para que a imagem preencha toda a caixa
+    mantendo a proporção */
+    .imageminicio {
       display: flex;
-      flex: 1;
       justify-content: center;
-      align-items: flex-end;
+      width: 200px;
+      height: 250px;
+      border-radius: 80px;
+      object-fit: cover;
       
+    }
+  }
+  /* Div que contém os dois textos do banner*/
+  .container {
+    flex: 1;
+    font-family: Pacifico;
+    font-size: 20px;
+    color: $rosa;
+    @include flexbox(row, center, center);
+  }
+  /* Chamei a class da frase separado, pois queria ajustá-la com tamanhos e estilo diferentes */
+  .banner-frase {
+    flex: 1;
+    font-size: 25px;
+    font-style: italic;
+    color: $rosa;
+    align-content: flex-end;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    @include flexbox(row, center, flex-start);
+  }
+  /* Div do botão */
+  .btn {
+    flex: 1;
+    @include flexbox(row, center, flex-start);
+    
+    /* a do botão; height de 20px para que o pontilhado fiquei ajustado ao tamanho do texto, border-style dotted para
+    que a borda do botão fique pontilhada */
+    .btn-rosa {
+      text-decoration: none;
+      font-size: 20px;
+      border-style: dotted;
+      border-radius: 30px;
+      padding: 15px 20px;
+      color: $rosa;
+      font-weight: bold;
+      height: 20px;
+      text-transform: uppercase;
     }
   }
 }
 
 
-/* Div que contém os dois textos do banner*/
-.container {
-  flex: 1;
-  font-family: Pacifico;
-  font-size: 20px;
-  color: $rosa;
-  @include flexbox(row, center, center);
-}
 
-/* Chamei a class da frase separado, pois queria ajustá-la com tamanhos e estilo diferentes */
-.banner-frase {
-  flex: 1;
-  font-size: 25px;
-  font-style: italic;
-  color: $rosa;
-  align-content: flex-end;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  @include flexbox(row, center, flex-start);
-}
 
-/* Div do botão */
-.btn {
-  flex: 1;
-  @include flexbox(row, center, flex-start);
-  
-  /* a do botão; height de 20px para que o pontilhado fiquei ajustado ao tamanho do texto, border-style dotted para
-  que a borda do botão fique pontilhada */
-  .btn-rosa {
-    text-decoration: none;
-    font-size: 20px;
-    border-style: dotted;
-    border-radius: 30px;
-    padding: 15px 20px;
-    color: $rosa;
-    font-weight: bold;
-    height: 20px;
-    text-transform: uppercase;
-  }
-}
 
 /* titílo da página de apresentação */
 .titulo-section {
@@ -123,6 +123,19 @@ poder centralizar a imagem com os textos */
     border-style: dashed;
     border-width: 3px;
     border-color: $rosa;
+  }
+}
+/* Texto com o link do projeto */
+.texto-projeto {
+  margin: 20px;
+  font-family: Abel;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  @include flexbox(row, center);
+  
+  .link-projeto {
+    color: $rosa;
   }
 }
 
@@ -157,8 +170,8 @@ poder centralizar a imagem com os textos */
     .habilidades_lista {
       display: flex;
       flex-direction: column;
-      font-size: 20px;
-      padding-left: 10px;
+      font-size: 19px;
+     
     }
   }
 }
@@ -190,25 +203,32 @@ poder centralizar a imagem com os textos */
   }
 }
 
-
-/* Texto com o link do projeto */
-.texto-projeto {
-  margin: 20px;
-  font-family: Abel;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  @include flexbox(row, center);
-  
-  .link-projeto {
-    color: $rosa;
-  }
-}
-
-
 @media (max-width: 1280px) {
   .banner-frase {
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .banner-frase {
+    text-align: center;
+    margin: 4px;
+  }
+
+  .habilidades_lista {
+    padding-left: 25px; 
+   
+  }  
+  .sobre-container {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
+  .redes-sociais {
+    width: 50px;
+    height: 80px;
+    .redes-img {
+      width: 50px;
+    }
   }
 }
 
@@ -221,6 +241,7 @@ poder centralizar a imagem com os textos */
   .container {
     font-size: 18px;
   }
+
   .banner-frase {
     font-size: 18px;
     text-align: center;
@@ -236,21 +257,18 @@ poder centralizar a imagem com os textos */
   }
 
   .img-container {
-    display: flex;
     width: 300px;
   }
 
   .sobre-container {
-    display: flex;
     font-size: 16px;
     padding-left: 5px;
   }
 
   .habilidades_lista {
-    display: flex;
     flex-direction: column;
     font-size: 16px;
-    padding-left: 20px;
+    padding-left: 25px;
   }
 
   .redes-sociais {
@@ -265,28 +283,3 @@ poder centralizar a imagem com os textos */
   }
 }
 
-@media (max-width: 768px) {
-  .banner-frase {
-    text-align: center;
-    margin: 4px;
-  }
-
-  .habilidades_lista {
-    font-size: 16px;
-    padding-left: 20px;
-   
-  }
-  .sobre-container {
-    font-size: 16px;
-    padding-left: 5px;
-  }
-
-  .redes-sociais {
-    width: 50px;
-    height: 80px;
-    .redes-img {
-      width: 50px;
-    }
-  }
-
-}
